@@ -101,6 +101,7 @@ public class demo {
 
     public static void canonicalJsonComposition(DentalBonusBookletComposition comp) {
 
+        // containts more information than flat JSON
         TemplateProvider provider = new DentalBonusBookletTemplateProvider();
         Unflattener unflat = new Unflattener(provider);
         RMObject rmobject = unflat.unflatten(comp);
@@ -111,6 +112,7 @@ public class demo {
 
     public static void flatJsonComposition(DentalBonusBookletComposition comp) {
 
+        // better readable than canonical JSON
         TemplateProvider provider = new DentalBonusBookletTemplateProvider();
         Unflattener unflat = new Unflattener(provider);
 
