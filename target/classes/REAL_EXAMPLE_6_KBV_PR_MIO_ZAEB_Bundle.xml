@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="76D86248-6F01-4BDE-81BC-ECBFF0F4236F"/>
+    <meta>
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Bundle|1.1.0"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:76D86248-6F01-4BDE-81BC-ECBFF0F4236F"/>
+    </identifier>
+    <type value="document"/>
+    <timestamp value="2021-12-07T16:16:27Z"/>
+    <entry>
+        <fullUrl value="urn:uuid:9A07B2C5-BC2E-4DEF-B9A8-83147FD97636"/>
+        <resource>
+            <Composition xmlns="http://hl7.org/fhir">
+                <id value="9A07B2C5-BC2E-4DEF-B9A8-83147FD97636"/>
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Composition|1.1.0"/>
+                </meta>
+                <status value="final"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+                        <code value="371525003"/>
+                        <display value="Clinical procedure report (record artifact)"/>
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="urn:uuid:674E4162-1E51-4D05-9A1B-4743F238AFBB"/>
+                </subject>
+                <date value="2015-01-01T00:00:00Z"/>
+                <author>
+                    <reference value="urn:uuid:CCBB06BB-8B0E-4A46-A519-B10C5C296C3B"/>
+                </author>
+                <title value="Bonushefteintrag"/>
+                <section>
+                    <entry>
+                        <reference value="urn:uuid:E0A1E7AF-A758-48CA-8172-CBCCD6415E87"/>
+                    </entry>
+					<entry>
+                        <reference value="urn:uuid:9F86E379-1A3C-4A26-8F11-CF0F6FB1C444"/>
+                    </entry>
+                </section>
+            </Composition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:674E4162-1E51-4D05-9A1B-4743F238AFBB"/>
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <id value="674E4162-1E51-4D05-9A1B-4743F238AFBB"/>
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Patient|1.1.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+                            <code value="GKV"/>
+                        </coding>
+                    </type>
+                    <system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
+                    <value value="X110500802"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <text value="Annamaria Gräfin Hünsch"/>
+                    <family value="Gräfin Hünsch">
+                        <extension url="http://fhir.de/StructureDefinition/humanname-namenszusatz">
+                            <valueString value="Gräfin"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+                            <valueString value="Hünsch"/>
+                        </extension>
+                    </family>
+                    <given value="Annamaria"/>
+                </name>
+                <birthDate value="1990-03-05"/>
+                <address>
+                    <type value="both"/>
+                    <line value="Gematikstr. 2">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                            <valueString value="Gematikstr."/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                            <valueString value="2"/>
+                        </extension>
+                    </line>
+                    <city value="Berlin"/>
+                    <postalCode value="12345"/>
+                    <country value="D"/>
+                </address>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:CCBB06BB-8B0E-4A46-A519-B10C5C296C3B"/>
+        <resource>
+            <Organization xmlns="http://hl7.org/fhir">
+                <id value="CCBB06BB-8B0E-4A46-A519-B10C5C296C3B"/>
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Organization|1.1.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+                            <code value="KZVA"/>
+                        </coding>
+                    </type>
+                    <system value="http://fhir.de/NamingSystem/kzbv/kzvabrechnungsnummer"/>
+                    <value value="2400"/>
+                </identifier>
+                <name value="Dr. Wolfram Greifenberg"/>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="04352/917025"/>
+                </telecom>
+                <telecom>
+                    <system value="fax"/>
+                    <value value="04352/917190"/>
+                </telecom>
+                <address>
+                    <type value="both"/>
+                    <line value="Vogelsang 1">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                            <valueString value="Vogelsang"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                            <valueString value="1"/>
+                        </extension>
+                    </line>
+                    <city value="Damp"/>
+                    <postalCode value="24351"/>
+                    <country value="D"/>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:E0A1E7AF-A758-48CA-8172-CBCCD6415E87"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="E0A1E7AF-A758-48CA-8172-CBCCD6415E87"/>
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Observation_Gapless_Documentation|1.1.0"/>
+                </meta>
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ZAEB_Disclaimer">
+                    <valueString value="Die Vertragsparteien sind sich einig, dass der Zahnarzt im Nachhinein für eine falsche Jahresangabe nicht haftbar gemacht werden kann, wenn die Krankenkasse bei der Prüfung eines Heil- und Kostenplanes keinen Bonus oder eine andere Bonusstufe feststellt."/>
+                </extension>
+                <status value="final"/>
+                <code>
+                    <text value="Datum, seit dem eine lückenlose Dokumentation in dem Papier-Zahnbonusheft nachweislich vorliegt."/>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:674E4162-1E51-4D05-9A1B-4743F238AFBB"/>
+                </subject>
+                <valueDateTime value="2011-03-02"/>
+            </Observation>
+        </resource>
+    </entry>
+	<entry>
+        <fullUrl value="urn:uuid:9F86E379-1A3C-4A26-8F11-CF0F6FB1C444"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="9F86E379-1A3C-4A26-8F11-CF0F6FB1C444"/>
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Observation_Dental_Check_Up|1.1.0"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+                        <code value="63963009"/>
+                        <display value="Dental prophylaxis, adult (procedure)">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Zahnärztliche Untersuchung (Erwachsen)"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:674E4162-1E51-4D05-9A1B-4743F238AFBB"/>
+                </subject>
+                <effectiveDateTime value="2021-12-07"/>
+                <valueBoolean value="true"/>
+            </Observation>
+        </resource>
+    </entry>
+</Bundle>

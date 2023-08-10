@@ -1,0 +1,162 @@
+﻿<Bundle xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <id value="E9A5A667-1A72-44D8-9A9A-50606A2E031A"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Bundle|1.1.0"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:E9A5A667-1A72-44D8-9A9A-50606A2E031A"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2021-12-07T13:37:43Z"/>
+  <entry>
+    <fullUrl value="urn:uuid:2B7C131D-FE59-48B6-B3B2-091F4958CD03"/>
+    <resource>
+      <Composition>
+        <id value="2B7C131D-FE59-48B6-B3B2-091F4958CD03"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Composition|1.1.0"/>
+        </meta>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+            <code value="371525003"/>
+            <display value="Clinical procedure report (record artifact)"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:880FA7E0-08CD-4169-9436-4D23B8C18C98"/>
+        </subject>
+        <date value="2021-12-07T13:37:43Z"/>
+        <author>
+          <reference value="urn:uuid:34B70000-6C7B-4F68-8DBE-00770190AE72"/>
+        </author>
+        <title value="Bonushefteintrag"/>
+        <section>
+          <entry>
+            <reference value="164FBA66-24DA-4636-8259-7DAFD356DE5B"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:880FA7E0-08CD-4169-9436-4D23B8C18C98"/>
+    <resource>
+      <Patient>
+        <id value="880FA7E0-08CD-4169-9436-4D23B8C18C98"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Patient|1.1.0"/>
+        </meta>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+              <code value="GKV"/>
+            </coding>
+          </type>
+          <system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
+          <value value="A123456789"/>
+        </identifier>
+        <name>
+          <use value="official"/>
+          <family value="Schimmelpfennig-Hammerschmidt">
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+              <valueString value="Schimmelpfennig-Hammerschmidt"/>
+            </extension>
+          </family>
+          <given value="Frida"/>
+          <prefix value="Dr.">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+              <valueCode value="AC"/>
+            </extension>
+          </prefix>
+        </name>
+        <birthDate value="1985-03-15"/>
+        <address>
+          <type value="both"/>
+          <line value="Anneliese- und Georg-von-Groscurth-Plätzchen 149-C">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Anneliese- und Georg-von-Groscurth-Plätzchen"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="149-C"/>
+            </extension>
+          </line>
+          <city value="Berlin"/>
+          <postalCode value="12489"/>
+          <country value="D"/>
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:34B70000-6C7B-4F68-8DBE-00770190AE72"/>
+    <resource>
+      <Organization>
+        <id value="34B70000-6C7B-4F68-8DBE-00770190AE72"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Organization|1.1.0"/>
+        </meta>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+              <code value="KZVA"/>
+            </coding>
+          </type>
+          <system value="http://fhir.de/NamingSystem/kzbv/kzvabrechnungsnummer"/>
+          <value value="13"/>
+        </identifier>
+        <name value="ProdPraxis23"/>
+        <address>
+          <type value="both"/>
+          <line value="Eberhard-Anheuser-Straße 333">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Eberhard-Anheuser-Straße"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="333"/>
+            </extension>
+          </line>
+          <city value="Bad Kreuznach"/>
+          <postalCode value="55543"/>
+          <country value="D"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:164FBA66-24DA-4636-8259-7DAFD356DE5B"/>
+    <resource>
+      <Observation>
+        <id value="164FBA66-24DA-4636-8259-7DAFD356DE5B"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Observation_Dental_Check_Up|1.1.0"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+            <code value="63963009"/>
+            <display value="Dental prophylaxis, adult (procedure)">
+              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                <extension url="content">
+                  <valueString value="Zahnärztliche Untersuchung (Erwachsen)"/>
+                </extension>
+              </extension>
+            </display>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:880FA7E0-08CD-4169-9436-4D23B8C18C98"/>
+        </subject>
+        <effectiveDateTime value="2021-12-07"/>
+        <valueBoolean value="true"/>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>

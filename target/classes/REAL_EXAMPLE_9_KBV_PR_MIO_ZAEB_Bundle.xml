@@ -1,0 +1,160 @@
+﻿<Bundle xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <id value="7C0F33DE-B438-4165-80A1-4B56F2FF0F53"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Bundle|1.1.0"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:7C0F33DE-B438-4165-80A1-4B56F2FF0F53"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2021-12-09T11:15:10Z"/>
+  <entry>
+    <fullUrl value="urn:uuid:B02BCF0C-2A88-4A50-8C17-8926C45C055C"/>
+    <resource>
+      <Composition>
+        <id value="B02BCF0C-2A88-4A50-8C17-8926C45C055C"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Composition|1.1.0"/>
+        </meta>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+            <code value="371525003"/>
+            <display value="Clinical procedure report (record artifact)"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:0D66F9F1-D91B-4D09-860F-B5EB87768FD7"/>
+        </subject>
+        <date value="2021-12-09T11:15:10Z"/>
+        <author>
+          <reference value="urn:uuid:0C18085D-E5E5-476F-8488-286ADAA17EA4"/>
+        </author>
+        <title value="Bonushefteintrag"/>
+        <section>
+          <entry>
+            <reference value="urn:uuid:4EB1EC47-DCA3-4393-B4BF-56AB455169B8"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:0D66F9F1-D91B-4D09-860F-B5EB87768FD7"/>
+    <resource>
+      <Patient>
+        <id value="0D66F9F1-D91B-4D09-860F-B5EB87768FD7"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Patient|1.1.0"/>
+        </meta>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+              <code value="GKV"/>
+            </coding>
+          </type>
+          <system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
+          <value value="X001815471"/>
+        </identifier>
+        <name>
+          <use value="official"/>
+          <family value="Connectathon">
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+              <valueString value="Connectathon"/>
+            </extension>
+          </family>
+          <given value="MIO"/>
+        </name>
+        <birthDate value="1998-01-01"/>
+        <address>
+          <type value="both"/>
+          <line value="Highway to ePA 12345 Heaven's door">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Highway to ePA"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="12345"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+              <valueString value="Heaven's door"/>
+            </extension>
+          </line>
+          <city value="Berlin"/>
+          <postalCode value="12349"/>
+          <country value="D"/>
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:0C18085D-E5E5-476F-8488-286ADAA17EA4"/>
+    <resource>
+      <Organization>
+        <id value="0C18085D-E5E5-476F-8488-286ADAA17EA4"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Organization|1.1.0"/>
+        </meta>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+              <code value="KZVA"/>
+            </coding>
+          </type>
+          <system value="http://fhir.de/NamingSystem/kzbv/kzvabrechnungsnummer"/>
+          <value value="13"/>
+        </identifier>
+        <name value="ProdPraxis23"/>
+        <address>
+          <type value="both"/>
+          <line value="Eberhard-Anheuser-Straße 333">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Eberhard-Anheuser-Straße"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="333"/>
+            </extension>
+          </line>
+          <city value="Bad Kreuznach"/>
+          <postalCode value="55543"/>
+          <country value="D"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:4EB1EC47-DCA3-4393-B4BF-56AB455169B8"/>
+    <resource>
+      <Observation>
+        <id value="4EB1EC47-DCA3-4393-B4BF-56AB455169B8"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Observation_Dental_Check_Up|1.1.0"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+            <code value="63963009"/>
+            <display value="Dental prophylaxis, adult (procedure)">
+              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                <extension url="content">
+                  <valueString value="Zahnärztliche Untersuchung (Erwachsen)"/>
+                </extension>
+              </extension>
+            </display>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:0D66F9F1-D91B-4D09-860F-B5EB87768FD7"/>
+        </subject>
+        <effectiveDateTime value="2021-11-01"/>
+        <valueBoolean value="true"/>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>
